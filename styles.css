@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
 
 * {
     font-family: Raleway, sans-serif;
@@ -7,21 +7,22 @@
 body {
     display: flex;
     flex-direction: column;
+    padding: 2%;
+    width: 90%;
 }
 
 /************** Partie HEADER *****************/
 
 header {
-    /* height: 110px; */
+   
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    /* align-items: center; */
+    width: 100%;
 }
 
  a {
     padding: 46px;
-   /* padding-top: 46px; */
     color: black;
     text-decoration: none;
     font-weight: 400;
@@ -45,12 +46,16 @@ a:hover {
 .logo {
     height: 16px;
     width: 61.09px;
-    /* A garder ? */
-    margin-top: 44px;
-    margin-left: 55px;
 }
 
 /************** Partie SECTION - Formulaire de recherche *****************/
+
+
+section {
+ display: flex;
+ width: 70%;
+ flex-direction: column;
+}
 
 h1 {
     font-size: 22px;
@@ -58,4 +63,88 @@ h1 {
 
 p {
     font-size: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#loupe {
+    display: none;
+}
+
+#gps {
+    padding: 18px;
+    width: 14px;
+    height: 18px;
+    background-color: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+    color : black
+}
+
+.iconeEtChamps {
+    display: flex;
+    align-items: center;
+}
+
+.champs {
+    font-weight: 700;
+    font-size: 18px;
+    border-left: none;
+    border-right: none;
+    border-top: 2px #F2F2F2 solid;
+    border-bottom: 2px #F2F2F2 solid;
+    padding: 14px;
+
+}
+
+.recherche {
+    color: white;
+    background-color: #0065FC;
+    border:none;
+    border-radius: 0px 10px 10px 0px;
+    padding : 14px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/************** Partie SECTION - Filtres de recherche *****************/
+
+h2 {
+    font-size: 18px;
+}
+.filtres {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 25px;
+    border: 2px #D9D9D9 solid;
+}
+
+button:hover {
+    background-color: #DEEBFF;
+}
+
+.boutons {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-around;
+}
+
+[class^="svg-inline--fa"] {
+  color: #0065fc
+}
+
+h3 {
+    padding: 10px 0px 10px 10px;
+    margin: 1px;
+    font-size: 17px;
 }
