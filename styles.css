@@ -8,7 +8,8 @@
 body {
     display: flex;
     flex-direction: column;
-    padding: 2%;
+    padding: 1%;
+    /* margin: 1px; */
     width: 90%;
 }
 
@@ -18,6 +19,12 @@ h1 {
 
 h2 {
     font-size:16px;
+}
+
+h3 {
+    padding: 10px 0px 10px 10px;
+    margin: 1px;
+    font-size: 17px;
 }
 
 p {
@@ -167,11 +174,6 @@ button:hover {
 
 }
 
-h3 {
-    padding: 10px 0px 10px 10px;
-    margin: 1px;
-    font-size: 17px;
-}
 
 .info {
     display: flex;
@@ -190,15 +192,28 @@ h3 {
     margin: 10px ;
 }
 
-/************** Partie SECTION - Cartes d'hébergement *****************/
+/************** Partie SECTION - Tous les hébergements *****************/
+
+.hebergementEtPop {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Sous-Partie - hébergement*/
 
 .cardHebergements {
     width: 70%;
 }
-.unHebergement img {
-    height: 124px;
-    width: 98%; 
-    border-radius: 20px 20px 0px 0px;
+
+.cardHebergements h3 {
+    font-size : 18px;
+}
+
+.contImgHebergement {
+    display: flex;
+    flex-direction: row;
+    flex-wrap : wrap;
+
 }
 
 .unHebergement {
@@ -208,6 +223,14 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px;
+}
+
+.unHebergement img {
+    height: 124px;
+    width: 98%; 
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 .legHebergement {
@@ -233,3 +256,47 @@ h3 {
     display: flex;
     margin: 5px;
 }
+
+
+/* Sous-Partie - Les populaires */
+
+.cardPop {
+    width: 30%;
+    /* display: flex;
+    flex-direction: column; */
+    
+}
+
+.titrePop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.contImgPop {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.unPop {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.unPop img {
+ width: 45%;
+ height: 144px;
+ border-radius: 20px 0px 0px 20px ;
+ object-fit: cover;
+}
+
+.legPop {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 55%;
+} 
