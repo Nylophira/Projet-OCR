@@ -23,18 +23,13 @@ h1 {
     font-size: 22px;
 }
 
-h2 {
-    font-size:16px;
-}
-
-h3 {
-    padding: 10px 0px 10px 10px;
-    margin: 1px;
-    font-size: 17px;
-}
-
 p {
     font-size: 16px;
+}
+
+.detail {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /************** Partie HEADER *****************/
@@ -89,7 +84,9 @@ a:hover {
 }
 
 .detailh1 {
-    margin-top: 2px;
+    margin-top: 5px;
+    font-weight: normal;
+    font-size:16px;
 }
 
 
@@ -140,14 +137,14 @@ form {
 
 /************** Partie SECTION - Filtres de recherche *****************/
 
-.filtres h2 {
-    font-size: 18px;
-    margin-right: 10px;
-}
 .filtres {
     display: flex;
     flex-direction: row;
     margin: 40px 0px 40px 0px;
+}
+
+.filtres p {
+    margin-right: 10px;
 }
 
 button {
@@ -168,6 +165,12 @@ button:hover {
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
+}
+
+.nomFiltre {
+    padding: 10px 0px 10px 10px;
+    margin: 1px;
+    font-size: 17px;
 }
 
 .iconeFiltre {
@@ -205,6 +208,11 @@ button:hover {
     flex-direction: row;
 }
 
+.titreLogEtAct{
+    font-size: 22px;
+
+}
+
 .etoiles {
     display: flex;
     flex-direction: row;
@@ -222,7 +230,8 @@ button:hover {
 }
 
 .cardHebergements h3 {
-    font-size : 18px;
+    margin: 5px;
+    font-size: 16px;
 }
 
 .contImgHebergement {
@@ -256,9 +265,7 @@ button:hover {
     flex-direction: column;
     align-self: flex-start;
 }
-.legHebergement h2 {
-    margin: 5px;
-}
+
 
 .legHebergement p {
     font-size: 14px;
@@ -324,8 +331,9 @@ button:hover {
     margin: 5px;
 } 
 
-.legPop h2 {
+.legPop h3 {
     margin: 3px 0px 5px 0px;
+    font-size: 16px;
 }
 
 .legPop p {
