@@ -15,7 +15,6 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    padding: 2%;
     width: 95%;
 }
 
@@ -38,11 +37,12 @@ header {
    
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: row;
     width: 100%;
 }
 
- a {
+ nav a {
     padding: 46px;
     color: black;
     text-decoration: none;
@@ -57,7 +57,7 @@ nav {
     width: 20%;
 }
 
-a:hover {
+nav a:hover {
     border-top: 2px #0065FC solid;
     color: #0065FC;
     font-weight: 500;
@@ -66,7 +66,7 @@ a:hover {
 
 .logo {
     height: 16px;
-    width: 61.09px;
+    width: auto;
 }
 
 /************** Partie SECTION - Formulaire de recherche *****************/
@@ -154,6 +154,7 @@ button {
     border-radius: 25px;
     border: 2px #D9D9D9 solid;
     padding: 0px 20px 0px 20px;
+    background-color: #ffffff;
 }
 
 button:hover {
@@ -188,6 +189,7 @@ button:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 20px;
 
 }
 
@@ -206,6 +208,7 @@ button:hover {
 .hebergementEtPop {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .titreLogEtAct{
@@ -222,16 +225,32 @@ button:hover {
     height: 12px;
 }
 
+#etoileVide {
+    color: #F2F2F2;
+}
+
+
 
 /* Sous-Partie - hébergement*/
 
 .cardHebergements {
-    width: 70%;
+    width: 65%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 20px 0px 0px 20px; 
 }
 
 .cardHebergements h3 {
     margin: 5px;
     font-size: 16px;
+}
+
+.cardHebergements .titreLogEtAct {
+    margin-left: 10px;
+}
+
+.cardHebergements .detail {
+    margin-left: 10px;
 }
 
 .contImgHebergement {
@@ -249,14 +268,24 @@ button:hover {
     flex-direction: column;
     align-items: center;
     margin: 10px;
+    background-color: #ffffff;
+}
+
+.unHebergement .cliquable {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .unHebergement img {
     height: 124px;
-    width: 98%; 
+    width: 96%; 
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
-    margin: 4px;
+    margin: 5px;
 }
 
 .legHebergement {
@@ -281,10 +310,13 @@ button:hover {
 /* Sous-Partie - Les populaires */
 
 .cardPop {
-    width: 30%;
+    width: 28%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding-top: 20px;
     
 }
 
@@ -300,7 +332,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 80%;
+    width: 85%;
     height: 100%;
 
 }
@@ -311,7 +343,16 @@ button:hover {
     margin: 5px;
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    background-color: #ffffff;
 
+}
+
+.unPop .cliquable {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 .unPop img {
@@ -319,7 +360,7 @@ button:hover {
  height: 144px;
  border-radius: 20px 0px 0px 20px ;
  object-fit: cover;
- margin: 3px;
+ margin: 5px;
 }
 
 .legPop {
