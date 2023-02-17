@@ -596,4 +596,64 @@ footer {
             font-size: 11px;
         }
 
+    /* Section - Tous hebergements */
+
+        .hebergementEtPop {
+            flex-direction: column;
+        }    
+
+     /* Juste les plus populaires */
+
+        .cardPop {
+            order: 1;
+            width: 100%;
+        }
+
+    /* Les autres hebergements */
+
+        .cardHebergements {
+            order:2;
+            width: 100%;
+            background-color: #ffffff;
+        }
+
+        .contImgHebergement {
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+        .unHebergement {
+            width: 85%;
+        }
+
+    /* Les activités */
+
+        #ancreAct {
+            width: 30%;
+        }
+        
+        .contImgAct {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .uneAct {
+            width: 85%;
+            margin-bottom: 30px;
+        }
+
+        .uneAct img {
+            height: 134px;
+        }
+
+    /* Partie footer */
+
+        footer {
+            flex-direction: column;
+        }
+
+        ul {
+            width: 70%;
+        }
+
     }
