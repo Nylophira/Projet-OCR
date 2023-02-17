@@ -7,16 +7,18 @@
 
 
 body {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-main {
-    display: flex;
+/*main {
+     display: flex;
     flex-direction: column;
-    width: 95%;
-}
+    width: 95%; 
+}*/
 
 h1 {
     font-size: 22px;
@@ -455,3 +457,29 @@ footer {
     font-size: 18px;
     font-weight: 700;
 }
+
+ /************** Responsive pour tablettes *****************/
+
+ @media all and (min-width:768px) and (max-width: 992px ) {
+    .hebergementEtPop {
+
+        flex-direction: column;
+    }
+
+.cardHebergements {
+    width: 100%;
+}
+
+.contImgPop {
+    flex-direction: row;
+}
+
+.cardPop {
+    width: 100%;
+}
+
+.uneAct img {
+    height: 210px;
+}
+
+ }
