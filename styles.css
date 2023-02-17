@@ -154,7 +154,7 @@ form {
     margin-right: 10px;
 }
 
-button {
+.boutonsConteneur button {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -164,7 +164,7 @@ button {
     background-color: #ffffff;
 }
 
-button:hover {
+.boutonsConteneur button:hover {
     background-color: #DEEBFF;
 }
 
@@ -459,7 +459,7 @@ footer {
 
  /************** Responsive pour tablettes *****************/
 
- @media all and (min-width:768px) and (max-width: 992px ) {
+ @media all and (min-width: 768px) and (max-width: 992px ) {
     
     .formRecherche {
         width: 100%;
@@ -523,5 +523,77 @@ footer {
     .uneAct img {
         height: 210px;
     }
+
+}
+
+    /************** Responsive pour smartphone *****************/
+
+    @media all and (max-width: 767px ) {
+
+
+     /* Header */
+        header {
+            flex-direction: column;
+        }
+
+        .logo {
+            height: 19px;
+            margin: 40px;
+        }
+
+        nav {
+            width: 100%;
+           /*  justify-content: space-between; */
+        }
+
+        nav a {
+            padding: 23px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a:hover {
+            border-bottom: 2px #0065FC solid;
+            border-top: none;
+        }
+
+    /* Formulaire de recherche */
+
+        .formRecherche {
+            width: 100%;
+            /* align-content: center; */
+        }
+
+        #loupe {
+            display: block;
+            color: #ffffff;
+            height: 17px;
+        }
+
+        .recherche span {
+            display: none;
+        }
+
+    /* Filtres de recherche */
+    
+
+        .filtres {
+            flex-direction: column;
+            /* flex-wrap: wrap; */
+        }
+
+        .boutonsConteneur {
+            flex-wrap: wrap;
+        }
+
+         .boutonsConteneur button {
+            width: 40%;
+            margin: 10px;
+        } 
+
+        .nomFiltre {
+            font-size: 11px;
+        }
 
     }

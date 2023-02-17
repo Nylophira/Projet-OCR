@@ -4,6 +4,8 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- Script pour les icones -->
     <script src="https://kit.fontawesome.com/a60b6f89fc.js" crossorigin="anonymous"></script>
+    <!-- Balise pour le responsive mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -24,8 +26,10 @@
                 <i id="gps" class="fa-solid fa-location-dot"></i>
                 <input class="champs" type="txt" value="Marseille, France"></input>
             </div>
-            <input class="recherche" type="submit" value="Rechercher"></input>
-            <i id="loupe" class="fa-solid fa-magnifying-glass"></i>
+            <button class="recherche">
+                <span>Rechercher</span>
+                <i id="loupe" class="fa-solid fa-magnifying-glass"></i>
+            </button>
         </form>
         <div class="filtres">
             <p class="detail">Filtres</p>
