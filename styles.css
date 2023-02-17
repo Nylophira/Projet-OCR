@@ -7,9 +7,9 @@
 
 
 body {
-    /* display: flex;
+    /*  display: flex;
     flex-direction: column;
-    align-items: center; */
+    align-items: center;  */
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -393,7 +393,7 @@ button:hover {
 
 .activites {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .contImgAct {
@@ -401,7 +401,6 @@ button:hover {
     flex-direction: row;
     justify-content: space-between;
 }
-
 
 
 .uneAct {
@@ -461,25 +460,68 @@ footer {
  /************** Responsive pour tablettes *****************/
 
  @media all and (min-width:768px) and (max-width: 992px ) {
+    
+    .formRecherche {
+        width: 100%;
+    }
+        
     .hebergementEtPop {
 
         flex-direction: column;
     }
 
-.cardHebergements {
-    width: 100%;
-}
+    .cardHebergements {
+        width: 100%;
+        }
+  
+    #ancreHeb {
+        margin-left: 30px;
+        }
+    
+    .contImgHebergement {
+        justify-content: space-evenly;
+        width: 95%; 
+    }
 
-.contImgPop {
+    .unHebergement {
+        width: 28%;
+    }
+
+
+    .contImgPop {
     flex-direction: row;
-}
+    width: 95%;
+    }
 
-.cardPop {
+    .cardPop {
     width: 100%;
-}
+    margin-top: 30px;
+    padding: 10px 10px 30px 10px;
 
-.uneAct img {
-    height: 210px;
-}
+    }
 
- }
+    .unPop {
+        width: 28%;
+    }
+
+    .titrePop {
+        width: 91%;
+    }
+
+    .legPop h3 {
+        margin-right: 15px;
+    }
+
+    .legPop h3:not(#hPopDiff) {
+        font-size: 14px;
+    }
+
+    .legPop p {
+        font-size: 13px;
+    }
+
+    .uneAct img {
+        height: 210px;
+    }
+
+    }
