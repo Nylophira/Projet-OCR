@@ -21,10 +21,10 @@
     <section class="formRecherche">
         <h1 class="h1section1">Trouvez votre hébergement pour des vacances de rêve</h1>
         <h2 class="detailh1">En plein centre ville ou en pleine nature</h2>
-        <form action="" methode="">
+        <form>
             <div class="iconeEtChamps">
                 <i id="gps" class="fa-solid fa-location-dot"></i>
-                <input class="champs" type="txt" value="Marseille, France"></input>
+                <input class="champs" type="text" value="Marseille, France">
             </div>
             <button class="recherche">
                 <span>Rechercher</span>
@@ -36,34 +36,34 @@
             <div class="boutonsConteneur">
                 <button>
                     <i class="iconeFiltre fa-solid fa-money-bill-wave"></i>
-                    <h3 class="nomFiltre">Économique</h3>
+                    <p class="nomFiltre">Économique</p>
                 </button>
                 <button>
                     <i class="iconeFiltre fa-solid fa-person"></i>
-                    <h3 class="nomFiltre">Familial</h3>
+                    <p class="nomFiltre">Familial</p>
                 </button>
                 <button>
                     <i class="iconeFiltre fa-solid fa-heart"></i>
-                    <h3 class="nomFiltre">Romantique</h3>
+                    <p class="nomFiltre">Romantique</p>
                 </button>
                 <button>
                     <i class="iconeFiltre fa-solid fa-dog"></i>
-                    <h3 class="nomFiltre">Animaux autorisés</h3>
+                    <p class="nomFiltre">Animaux autorisés</p>
                 </button>
             </div>
         </div>
-        <aside class="info">
+        <div class="info">
             <i id="imageInfo" class="fa-solid fa-info"></i>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </aside>
+        </div>
     </section>
     <!-- Carte d'hébergement-->
     <section class="hebergementEtPop">
         <article class="cardHebergements">
             <h2 id="ancreHeb" class="titreLogEtAct">Hébergements à Marseille</h2>
             <div class="contImgHebergement">
+                <a class="cliquable" href="#">
                 <figure class="unHebergement">
-                    <a class="cliquable" href="#">
                         <img src="Images Booki\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Canebière">
                         <figcaption class="legHebergement">
                             <h3>Auberge La Canebière</h3>
@@ -76,10 +76,10 @@
                                 <i class="fa-solid fa-star" id="etoileVide"></i>
                             </div>
                         </figcaption>
-                    </a>
-                </figure>
-                <figure class="unHebergement">
-                    <a class="cliquable" href="#">
+                    </figure>
+                </a>
+                <a class="cliquable" href="#">
+                    <figure class="unHebergement">
                         <img src="Images Booki\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du Port">
                         <figcaption class="legHebergement">
                             <h3>Hôtel du port</h3>
@@ -92,10 +92,10 @@
                                 <i class="fa-solid fa-star" id="etoileVide"></i>
                             </div>
                         </figcaption>
-                    </a>
-                </figure>
-                <figure class="unHebergement">
-                    <a class="cliquable" href="#">
+                    </figure>
+                </a>
+                <a class="cliquable" href="#">
+                    <figure class="unHebergement">
                         <img src="Images Booki\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hotel les mouettes">
                         <figcaption class="legHebergement">
                             <h3>Hôtel Les mouettes</h3>
@@ -108,10 +108,10 @@
                                 <i class="fa-solid fa-star" id="etoileVide"></i>
                             </div>
                         </figcaption>
-                    </a>
-                </figure>
-                <figure class="unHebergement">
-                    <a class="cliquable" href="#">
+                    </figure>
+                </a>
+                <a class="cliquable" href="#">
+                    <figure class="unHebergement">
                         <img src="Images Booki\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la mer">
                         <figcaption class="legHebergement">
                             <h3>Hôtel de la mer</h3>
@@ -124,10 +124,10 @@
                                 <i class="fa-solid fa-star" id="etoileVide"></i>
                             </div>
                         </figcaption>
-                    </a>
-                </figure>
-                <figure class="unHebergement">
-                    <a class="cliquable" href="#">
+                    </figure>
+                </a>
+                <a class="cliquable" href="#">
+                    <figure class="unHebergement">
                         <img src="Images Booki\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier">
                         <figcaption class="legHebergement">
                             <h3>Auberge Le Panier</h3>
@@ -140,10 +140,10 @@
                                 <i class="fa-solid fa-star" id="etoileVide"></i>
                             </div>
                         </figcaption>
-                    </a>
-                </figure>
-                <figure class="unHebergement">
-                    <a class="cliquable" href="#">
+                    </figure>
+                </a>
+                <a class="cliquable" href="#">
+                    <figure class="unHebergement">
                         <img src="Images Booki\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel chez Amina">
                         <figcaption class="legHebergement">
                             <h3>Hotel chez Amina</h3>
@@ -156,8 +156,8 @@
                                 <i class="fa-solid fa-star" id="etoileVide"></i>
                             </div>
                         </figcaption>
-                    </a>
-                </figure>
+                    </figure>
+                </a>
             </div>
             <p class="detail">Afficher plus</p>
         </article>
@@ -168,8 +168,8 @@
                 <i class="fa-solid fa-chart-line"></i>
             </div>
             <div class="contImgPop">
-                <figure class="unPop">
-                    <a class="cliquable" href="#">
+                <a class="cliquable" href="#">
+                    <figure class="unPop">
                         <img src="Images Booki\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
                         <figcaption class="legPop">
                             <div>
@@ -184,10 +184,10 @@
                                 <i class="fa-solid fa-star" id="etoileVide"></i>
                             </div>
                         </figcaption>
-                    </a>
-                </figure>
-                <figure class="unPop">
-                    <a class="cliquable" href="#">
+                    </figure>
+                </a>
+                <a class="cliquable" href="#">
+                    <figure class="unPop">
                         <img src="Images Booki\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambres d'hôtes Au coeur de l'eau">
                         <figcaption class="legPop">
                             <div>
@@ -202,10 +202,10 @@
                                 <i class="fa-solid fa-star" id="etoileVide"></i>
                             </div>
                         </figcaption>
-                    </a>
-                </figure>
-                <figure class="unPop">
-                    <a class="cliquable" href="#">
+                     </figure>
+                </a>
+                <a class="cliquable" href="#">
+                    <figure class="unPop">
                         <img id="imgPop3" src="Images Booki\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Bleu et Blanc">
                         <figcaption class="legPop">
                             <div>
@@ -229,30 +229,30 @@
     <section class="activites">
         <h2 id="ancreAct" class="titreLogEtAct">Activités à Marseille</h2>
         <div class="contImgAct">
-            <figure class="uneAct">
             <a class="cliquable" href="#">
-                <img src="Images Booki\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Le vieux port">
-                <h3>Vieux-Port</h3>
+                <figure class="uneAct">
+                    <img src="Images Booki\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Le vieux port">
+                    <h3>Vieux-Port</h3>
+                 </figure>
             </a>
-        </figure>
-        <figure class="uneAct">
             <a class="cliquable" href="#">
-                <img src="Images Booki\activites\4_small\paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-                <h3>Fort de Pomègues</h3>
+                <figure class="uneAct">
+                    <img src="Images Booki\activites\4_small\paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                    <h3>Fort de Pomègues</h3>
+                </figure>
             </a>
-        </figure>
-        <figure class="uneAct">
             <a class="cliquable" href="#">
-                <img src="Images Booki\activites\4_small\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques">
-                <h3>Parc national des Calanques</h3>
-            </a>
-        </figure>
-        <figure class="uneAct">
+                <figure class="uneAct">
+                    <img src="Images Booki\activites\4_small\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques">
+                    <h3>Parc national des Calanques</h3>
+                </figure>
+            </a> 
             <a class="cliquable" href="#">
-                <img src="Images Booki\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-dame-de-la-Garde">
-                <h3>Notre-dame-de-la-Garde</h3>
+                <figure class="uneAct">
+                    <img src="Images Booki\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-dame-de-la-Garde">
+                    <h3>Notre-dame-de-la-Garde</h3>
+                </figure>
             </a>
-        </figure>
     </section>
     <footer>
         <ul>

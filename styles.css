@@ -12,6 +12,7 @@ body {
     align-items: center;  */
     max-width: 1400px;
     margin: 0 auto;
+    padding: 0px 40px 40px 40px;
 }
 
 /*main {
@@ -61,7 +62,6 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    width: 20%;
 }
 
 nav a:hover {
@@ -179,6 +179,7 @@ form {
     padding: 10px 0px 10px 10px;
     margin: 1px;
     font-size: 17px;
+    font-weight: 700;
 }
 
 .iconeFiltre {
@@ -267,7 +268,8 @@ form {
 
 }
 
-.unHebergement {
+.contImgHebergement .cliquable {
+
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
     width: 30%;
@@ -278,12 +280,16 @@ form {
     background-color: #ffffff;
 }
 
-.unHebergement .cliquable {
+.unHebergement {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin: 0%;
 }
+
+
 
 .unHebergement img {
     height: 124px;
@@ -315,7 +321,7 @@ form {
 /* Sous-Partie - Les populaires */
 
 .cardPop {
-    width: 28%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -342,21 +348,24 @@ form {
 
 }
 
-.unPop {
+.contImgPop .cliquable {
     display: flex;
     flex-direction: row;
     margin: 5px;
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
     background-color: #ffffff;
-
 }
 
-.unPop .cliquable {
+.unPop {
+
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin: 0%;
+
 }
+
 
 .unPop img {
  width: 40%;
@@ -402,20 +411,20 @@ form {
     justify-content: space-between;
 }
 
-
-.uneAct {
-   /*  display: flex; */
+.contImgAct .cliquable {
     width: 22%;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
     border-radius: 20px;
     margin: 0px;
 }
 
-.uneAct .cliquable {
+.uneAct {
+    margin: 0px; 
     display: flex;
     flex-direction: column;
     width: 100%;
 }
+
 
 .uneAct img {
     height: 390px;
@@ -483,7 +492,7 @@ footer {
         width: 95%; 
     }
 
-    .unHebergement {
+    .contImgHebergement .cliquable {
         width: 28%;
     }
 
@@ -500,7 +509,7 @@ footer {
 
     }
 
-    .unPop {
+    .contImgPop .cliquable {
         width: 28%;
     }
 
@@ -594,6 +603,7 @@ footer {
 
         .nomFiltre {
             font-size: 11px;
+            padding: 20px 0px 20px 10px;
         }
 
     /* Section - Tous hebergements */
@@ -615,6 +625,7 @@ footer {
             order:2;
             width: 100%;
             background-color: #ffffff;
+            padding: 0%;
         }
 
         .contImgHebergement {
@@ -622,7 +633,7 @@ footer {
             flex-wrap: nowrap;
         }
 
-        .unHebergement {
+        .contImgHebergement .cliquable {
             width: 85%;
         }
 
@@ -630,6 +641,7 @@ footer {
 
         #ancreAct {
             width: 30%;
+            margin-left: 10%;
         }
         
         .contImgAct {
@@ -637,7 +649,7 @@ footer {
             align-items: center;
         }
 
-        .uneAct {
+        .contImgAct .cliquable {
             width: 85%;
             margin-bottom: 30px;
         }
