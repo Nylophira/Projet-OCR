@@ -233,7 +233,7 @@ form {
     height: 12px;
 }
 
-#etoileVide {
+.etoileVide {
     color: #F2F2F2;
 }
 
@@ -413,7 +413,7 @@ form {
 
 .contImgAct .cliquable {
     width: 22%;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 2px #7b77771f;
     border-radius: 20px;
     margin: 0px;
 }
@@ -539,8 +539,11 @@ footer {
 
     @media all and (max-width: 767px ) {
 
-
+        body {
+            padding: 2%;
+        }
      /* Header */
+
         header {
             flex-direction: column;
         }
@@ -572,6 +575,10 @@ footer {
         .formRecherche {
             width: 100%;
             /* align-content: center; */
+        }
+
+        form {
+            justify-content: space-around;
         }
 
         #loupe {
@@ -617,30 +624,42 @@ footer {
         .cardPop {
             order: 1;
             width: 100%;
+            padding-bottom: 20px;
         }
 
     /* Les autres hebergements */
+
+        #ancreHeb {
+            margin-left: 8%;
+        }
 
         .cardHebergements {
             order:2;
             width: 100%;
             background-color: #ffffff;
             padding: 0%;
+            margin-top: 10px;
         }
 
         .contImgHebergement {
             flex-direction: column;
             flex-wrap: nowrap;
+            align-items: center;
         }
 
         .contImgHebergement .cliquable {
             width: 85%;
+            box-shadow: 0px 5px 2px #7b77771f;
+        }
+
+        .detail {
+            display: none;
         }
 
     /* Les activités */
 
         #ancreAct {
-            width: 30%;
+            width: 35%;
             margin-left: 10%;
         }
         
