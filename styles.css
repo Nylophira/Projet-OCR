@@ -30,10 +30,14 @@ p {
     color: black;
 }
 
+[class^="svg-inline--fa"] {
+    color: #0065fc
+  
+  }
+
 /************** Partie HEADER *****************/
 
-header {
-   
+header {   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,41 +45,37 @@ header {
     width: 100%;
 }
 
- nav a {
-    padding: 46px;
-    color: black;
-    text-decoration: none;
-    font-weight: 400;
-    font-size : 16px;
-   
-} 
+.logo {
+    height: 16px;
+    width: auto;
+}
 
 nav {
     display: flex;
     justify-content: center;
 }
 
+ nav a {
+    padding: 46px;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    font-size : 16px;  
+} 
+
 nav a:hover {
     border-top: 2px #0065FC solid;
     color: #0065FC;
     font-weight: 500;
-    
-}
-
-.logo {
-    height: 16px;
-    width: auto;
 }
 
 /************** Partie SECTION - Formulaire de recherche *****************/
-
 
 .formRecherche {
  display: flex;
  width: 75%;
  flex-direction: column;
 }
-
 
 .h1section1 {
     margin-bottom: 2px;
@@ -87,15 +87,15 @@ nav a:hover {
     font-size:16px;
 }
 
+.iconeEtChamps {
+    display: flex;
+    align-items: center;
+}
 
 form {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-#loupe {
-    display: none;
 }
 
 #gps {
@@ -107,11 +107,6 @@ form {
     color : black
 }
 
-.iconeEtChamps {
-    display: flex;
-    align-items: center;
-}
-
 .champs {
     font-weight: 700;
     font-size: 18px;
@@ -120,7 +115,6 @@ form {
     border-top: 2px #F2F2F2 solid;
     border-bottom: 2px #F2F2F2 solid;
     padding: 14px;
-
 }
 
 .recherche {
@@ -133,6 +127,10 @@ form {
     font-size: 18px;
 }
 
+#loupe {
+    display: none;
+}
+
 /************** Partie SECTION - Filtres de recherche *****************/
 
 .filtres {
@@ -143,6 +141,13 @@ form {
 
 .filtres p {
     margin-right: 10px;
+}
+
+.boutonsConteneur {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .boutonsConteneur button {
@@ -159,11 +164,9 @@ form {
     background-color: #DEEBFF;
 }
 
-.boutonsConteneur {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
+.iconeFiltre {
+    width: 22px;
+    height: 16.26px;
 }
 
 .nomFiltre {
@@ -172,17 +175,6 @@ form {
     font-size: 17px;
     font-weight: 700;
 }
-
-.iconeFiltre {
-    width: 22px;
-    height: 16.26px;
-}
-
-[class^="svg-inline--fa"] {
-  color: #0065fc
-
-}
-
 
 .info {
     display: flex;
@@ -239,13 +231,13 @@ form {
     padding: 20px 0px 0px 20px; 
 }
 
+.cardHebergements .titreLogEtAct {
+    margin-left: 10px;
+}
+
 .cardHebergements h3 {
     margin: 5px;
     font-size: 16px;
-}
-
-.cardHebergements .titreLogEtAct {
-    margin-left: 10px;
 }
 
 .cardHebergements .detail {
@@ -354,7 +346,6 @@ form {
     flex-direction: row;
     width: 100%;
     margin: 0%;
-
 }
 
 
@@ -416,19 +407,15 @@ form {
     width: 100%;
 }
 
-
 .uneAct img {
     height: 390px;
     object-fit: cover;
-    width: 100%;
     border-radius: 20px 20px 0px 0px;
-
 }
 
 .uneAct h3 {
     font-size: 16px;
-    margin: 20px;
-  
+    margin: 20px; 
   }
 
   /************** Partie footer *****************/
@@ -440,17 +427,16 @@ footer {
     flex-direction: row;
 }
 
-  ul {
+ul {
     margin: 40px;
     padding-left: 0px;
     width: 25%;
-  }
+}
 
-  li {
+li {
     list-style-type: none;
-    margin: 10px;
-    
-  }
+    margin: 10px 
+}
 
 .titreListe {
     font-size: 18px;
@@ -504,15 +490,20 @@ footer {
         width: 28%;
     }
 
+    .unPop img {
+        width: 35%;
+    }
+
+    #imgPop3 {
+        width: 35%;
+    }
+
     .titrePop {
         width: 91%;
     }
 
     .legPop h3 {
         margin-right: 15px;
-    }
-
-    .legPop h3:not(#hPopDiff) {
         font-size: 14px;
     }
 
@@ -528,7 +519,7 @@ footer {
 
     /************** Responsive pour smartphone *****************/
 
-    @media all and (max-width: 767px ) {
+    @media all and (max-width: 768px ) {
 
         body {
             padding: 2%;
@@ -546,7 +537,6 @@ footer {
 
         nav {
             width: 100%;
-           /*  justify-content: space-between; */
         }
 
         nav a {
@@ -565,7 +555,6 @@ footer {
 
         .formRecherche {
             width: 100%;
-            /* align-content: center; */
         }
 
         form {
@@ -587,7 +576,6 @@ footer {
 
         .filtres {
             flex-direction: column;
-            /* flex-wrap: wrap; */
         }
 
         .boutonsConteneur {
