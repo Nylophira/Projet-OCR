@@ -120,6 +120,7 @@ form {
 
 .champs::placeholder {
     color: black;
+    opacity: 1;
 }
 
 .recherche {
