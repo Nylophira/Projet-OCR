@@ -46,7 +46,7 @@ header {
 }
 
 .logo {
-    height: 16px;
+    height: 19px;
     width: auto;
 }
 
@@ -67,6 +67,7 @@ nav a:hover {
     border-top: 2px #0065FC solid;
     color: #0065FC;
     font-weight: 500;
+    padding: 44px;
 }
 
 /************** Partie SECTION - Formulaire de recherche *****************/
@@ -117,6 +118,10 @@ form {
     padding: 14px;
 }
 
+.champs::placeholder {
+    color: black;
+}
+
 .recherche {
     color: white;
     background-color: #0065FC;
@@ -154,7 +159,7 @@ form {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-radius: 25px;
+    border-radius: 35px;
     border: 2px #D9D9D9 solid;
     padding: 0px 20px 0px 20px;
     background-color: #ffffff;
@@ -164,13 +169,17 @@ form {
     background-color: #DEEBFF;
 }
 
-.iconeFiltre {
+.iconeFiltre:not(#humain) {
     width: 22px;
-    height: 16.26px;
+    height: auto;
+}
+
+#humain {
+    height: 22px;
 }
 
 .nomFiltre {
-    padding: 10px 0px 10px 10px;
+    padding: 5px 0px 5px 10px;
     margin: 1px;
     font-size: 17px;
     font-weight: 700;
@@ -241,7 +250,9 @@ form {
 }
 
 .cardHebergements .detail {
-    margin-left: 10px;
+    display: flex;
+    margin: 18px 0px 18px 10px;
+
 }
 
 .contImgHebergement {
@@ -510,8 +521,9 @@ li {
     @media all and (max-width: 768px ) {
 
         body {
-            padding: 2%;
+            padding: 0%;
         }
+
      /* Header */
 
         header {
@@ -519,16 +531,17 @@ li {
         }
 
         .logo {
-            height: 19px;
             margin: 40px;
         }
 
         nav {
             width: 100%;
+            display: flex;
+            align-items: center;
         }
 
         nav a {
-            padding: 23px;
+            padding: 23px 0px 23px 0px;
             width: 50%;
             display: flex;
             justify-content: center;
@@ -537,14 +550,19 @@ li {
         nav a:hover {
             border-bottom: 2px #0065FC solid;
             border-top: none;
+            padding: 23px 0px 21px 0px;
         }
 
     /* Formulaire de recherche */
 
         .formRecherche {
-            width: 100%;
+            width: 93%;
+            margin: 0 auto;
         }
-
+        
+        .formRecherche h1 {
+            padding-right :10px;
+        }
         form {
             justify-content: space-around;
         }
@@ -571,13 +589,14 @@ li {
         }
 
          .boutonsConteneur button {
-            width: 40%;
-            margin: 10px;
+            width: 44%;
+            margin: 10px 0px 10px 0px;
+            padding: 0px 5px 0px 10px;
         } 
 
         .nomFiltre {
             font-size: 11px;
-            padding: 20px 0px 20px 10px;
+            padding: 15px 0px 15px 5px;
         }
 
     /* Section - Tous hebergements */
@@ -592,6 +611,7 @@ li {
             order: 1;
             width: 100%;
             padding-bottom: 20px;
+            border-radius: 0px;
         }
 
     /* Les autres hebergements */
